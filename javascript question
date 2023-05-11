@@ -1,6 +1,6 @@
-const count =false; //true;
+const count =false; //true;//to initialise the conditions
 
-let countValue = new Promise(function (resolve, reject) {
+let countValue = new Promise(function (resolve, reject) {//initilise promise
     if (count) {
         resolve("There is a count value.");
     } else {
@@ -8,5 +8,5 @@ let countValue = new Promise(function (resolve, reject) {
     }
 });
 
-countValue.then(function ifscucess(){alert("sucess");})
-countValue.catch(function iffailuier(){alert("failuier");})
+countValue.then(function ifscucess(){alert("sucess");})//if sucess
+countValue.catch(function iffailuier(){alert("failuier");})//if failure
