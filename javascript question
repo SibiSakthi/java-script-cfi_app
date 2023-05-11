@@ -1,0 +1,12 @@
+const count =false; //true;
+
+let countValue = new Promise(function (resolve, reject) {
+    if (count) {
+        resolve("There is a count value.");
+    } else {
+        reject("There is no count value");
+    }
+});
+
+countValue.then(function ifscucess(){alert("sucess");})
+countValue.catch(function iffailuier(){alert("failuier");})
